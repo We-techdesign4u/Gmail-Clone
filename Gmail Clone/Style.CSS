@@ -1,0 +1,541 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+  background-color: rgb(246, 248, 252);
+  /* overflow-y: hidden; */
+}
+
+.headerwrap {
+  height: 60px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.menuAndlogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 250px;
+}
+
+.menuicon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  margin: 10px;
+}
+
+.menuicon:hover,
+.searchicon:hover,
+.searchfilter:hover,
+.hovericon:hover,
+.navs:hover,
+.addlabels:hover,
+.checkbox:hover,
+.dropdown:hover,
+.refresh:hover,
+.option:hover,
+.emailpages:hover,
+.goright:hover,
+.icononhover:hover,
+.RCicons:hover
+/* .checkandstarred:hover  */ {
+  background-color: rgb(218, 220, 224);
+}
+
+.middlecontainer {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.searchbar {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #eaf1fb;
+  border-radius: 32px;
+  margin: 6px;
+  justify-content: space-between;
+}
+
+.searchiconandbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchicon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  margin: 6px;
+}
+
+.searchinput {
+  width: 550px;
+  height: 30px;
+  margin: 0px;
+  background-color: #eaf1fb;
+  border-color: none;
+  border-style: none;
+}
+
+.searchfilter {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  margin: 6px;
+}
+
+.extraicons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nohovericon,
+.hovericon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  margin: 3px;
+  fill: rgb(132, 132, 132);
+}
+
+.account {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilep img {
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  /* background-color: rgb(105, 52, 52); */
+  /* font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+  background-image: url(Images/profileimg.jpg); */
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100%;
+}
+
+.leftnavcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 0px;
+}
+
+.compose {
+  display: flex;
+  height: 56px;
+  width: 150px;
+  margin: 10px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  background-color: #c2e7ff;
+  flex-direction: row;
+  align-items: center;
+}
+
+.compose:hover {
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302),
+    0 4px 8px 3px rgba(60, 64, 67, 0.149);
+}
+
+.compose img {
+  margin: 15px;
+}
+
+.navs,
+.navs1 {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+
+  margin-right: 15px;
+  border-radius: 0px 15px 15px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navs1 {
+  background-color: rgb(211, 227, 253);
+}
+
+.iconandtextwrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navsicon,
+.navsicon1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: center;
+  fill: rgb(107, 107, 107);
+}
+.navsicon1 {
+  fill: black;
+}
+
+.navstext {
+  margin-left: 20px;
+  color: black;
+}
+
+.navscount {
+  margin-right: 10px;
+  color: black;
+}
+
+a,
+p {
+  font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(86, 86, 86);
+  font-size: 14px;
+}
+
+.labels {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: lighter;
+  justify-content: space-between;
+  color: rgb(57, 57, 57);
+  align-items: center;
+}
+
+.addlabels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 18px;
+  color: rgb(116, 116, 116);
+}
+
+.emails {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: white;
+  border-radius: 15px;
+  width: 800px;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+.emailheader {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emailheaderleft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+.checkbox,
+.dropdown,
+.refresh,
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  height: 40px;
+  width: 28px;
+  border-radius: 5px;
+  fill: rgb(45, 45, 45);
+}
+
+.dropdown {
+  margin-left: 2px;
+  width: 20px;
+}
+
+.refresh,
+.option {
+  margin-left: 14px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.emailheaderright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  align-content: center;
+  width: auto;
+}
+
+.emailpages,
+.goleft,
+.goright {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  fill: rgb(45, 45, 45);
+}
+
+.emailpages {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.goleft {
+  fill: rgb(156, 156, 156);
+}
+
+.rightcontainer {
+  width: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightcontainer img {
+  height: 20px;
+}
+
+.RCicons {
+  margin-top: 20px;
+  margin-bottom: px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.eachemail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.email1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+  height: 40px;
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: rgb(227, 227, 227);
+}
+
+.email1:hover {
+  border-style: none none solid none;
+  box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0,
+    0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.email1:hover .emailhoveroptions {
+  display: flex;
+}
+
+.email1:hover .leftoption {
+  visibility: visible;
+}
+
+.email1:hover .emaildate {
+  display: none;
+}
+
+.leftoption {
+  margin: 0px 8px 0px 8px;
+  fill: rgb(127, 127, 127);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.checkandstarred {
+  margin-right: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  fill: rgb(152, 152, 152);
+}
+
+.sender {
+  min-width: 168px;
+  justify-content: center;
+  line-height: 10px;
+  padding-right: 30px;
+}
+
+.sender p,
+.content p span {
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 20px;
+}
+
+.dateoricon {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: end;
+}
+
+.emaildate {
+  line-height: 10px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: relative;
+}
+
+.emailhoveroptions {
+  display: none;
+  flex-direction: row;
+  margin-right: 5px;
+}
+
+.icononhover {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 40px 60px 10px;
+  align-items: first baseline;
+}
+
+.footer p {
+  font-size: 13px;
+}
+
+.footerleft {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullstorage {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  height: 5px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 2.5px;
+}
+
+.storageused {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: rgb(85, 85, 85);
+}
+
+.footerright {
+  text-align: right;
+}

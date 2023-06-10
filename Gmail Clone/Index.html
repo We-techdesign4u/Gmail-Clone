@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GmailClone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headerwrap">
+        <div class="menuAndlogo">
+          <div class="menuicon">
+            <svg x="0px" y="0px" width="24px" height="24px">
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+          </div>
+          <img src="Images/Gmail Logo.png" alt="" />
+        </div>
+        <div class="middlecontainer">
+          <div class="searchbar">
+            <div class="searchiconandbox">
+              <div class="searchicon">
+                <svg x="0px" y="0px" width="24px" height="24px">
+                  <path
+                    d="M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="searchtextfield">
+                <input
+                  class="searchinput"
+                  type="text"
+                  placeholder="search mail"
+                />
+              </div>
+            </div>
+            <div class="searchfilter">
+              <svg x="0px" y="0px" width="24px" height="24px">
+                <path
+                  d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="extraicons">
+            <div class="nohovericon">
+              <svg x="0px" y="0px" width="24px" height="24px">
+                <path
+                  d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"
+                ></path>
+              </svg>
+            </div>
+            <div class="nohovericon">
+              <svg
+                class="Xy"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z"
+                ></path>
+                <circle cx="12" cy="12" r="3.5"></circle>
+              </svg>
+            </div>
+            <div class="hovericon">
+              <svg x="0px" y="0px" width="24px" height="24px">
+                <path
+                  d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="account">
+          <div class="profilep"><img src="Images/profileimg.jpg" alt="" /></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <div class="leftnavcontainer">
+          <a href="" class="compose"
+            ><div>
+              <img src="Images/create_black_24dp.png" alt="" />
+            </div>
+            <p>Compose</p></a
+          >
+          <a href="" class="navs1">
+            <div class="iconandtextwrap">
+              <div class="navsicon1">
+                <img
+                  class=""
+                  src="Images/inbox_fill_baseline_p900_20dp.png"
+                  alt=""
+                />
+              </div>
+              <div class="navstext"><p>Inbox</p></div>
+            </div>
+            <div class="navscount"><p>45563</p></div></a
+          >
+          <a href="" class="navs">
+            <div class="iconandtextwrap">
+              <div class="navsicon">
+                <svg
+                  viewbox="0 0 22 22"
+                  x="0px"
+                  y="0px"
+                  width="18px"
+                  height="18px"
+                >
+                  <path
+                    xmlns="http://www.w3.org/2000/svg"
+                    d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                  />
+                </svg>
+              </div>
+              <div class="navstext"><p>Starred</p></div>
+            </div>
+            <div class="navscount"><p></p></div
+          ></a>
+          <a href="" class="navs">
+            <div class="iconandtextwrap">
+              <div class="navsicon">
+                <svg
+                  viewbox="0 0 22 22"
+                  x="0px"
+                  y="0px"
+                  width="18px"
+                  height="18px"
+                >
+                  <g xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.47,4.24c0.23,0,0.45,0.11,0.61,0.27c0.14,0.15,0.22,0.34,0.21,0.54l-0.12,4.44l-0.01,0.25l0.19,0.16l2.78,2.25   c0.18,0.15,0.28,0.35,0.29,0.57c0,0.22-0.09,0.43-0.27,0.58c-0.16,0.14-0.37,0.22-0.6,0.22c-0.22,0-0.42-0.07-0.58-0.2l-3.26-2.65   c-0.19-0.15-0.29-0.38-0.29-0.61l0.14-5.05c0.01-0.21,0.09-0.4,0.25-0.54c0.16-0.15,0.38-0.23,0.61-0.23"
+                    />
+                    <path
+                      d="M10,0.94c-5,0-9.06,4.06-9.06,9.06c0,4.99,4.06,9.06,9.06,9.06c4.99,0,9.06-4.06,9.06-9.06C19.06,5.01,15,0.94,10,0.94z    M10,17.33c-4.04,0-7.33-3.29-7.33-7.33c0-4.04,3.29-7.33,7.33-7.33c4.04,0,7.33,3.29,7.33,7.33C17.33,14.04,14.04,17.33,10,17.33z   "
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="navstext"><p>Snoozed</p></div>
+            </div>
+            <div class="navscount"><p></p></div
+          ></a>
+          <a href="" class="navs">
+            <div class="iconandtextwrap">
+              <div class="navsicon">
+                <svg
+                  viewbox="0 0 22 22"
+                  x="0px"
+                  y="0px"
+                  width="18px"
+                  height="18px"
+                >
+                  <path
+                    xmlns="http://www.w3.org/2000/svg"
+                    d="M19.13,9.27l-0.02-0.01L1.16,1.57C1.08,1.54,1,1.53,0.92,1.53c-0.06,0-0.12,0.01-0.17,0.03C0.53,1.62,0.37,1.87,0.37,2.11  l0.19,15.57c-0.05,0.28,0,0.47,0.12,0.6c0.17,0.19,0.41,0.27,0.71,0.12c0.77-0.33,6.76-3.02,17.82-7.99  c0.25-0.14,0.43-0.28,0.43-0.57C19.64,9.68,19.58,9.44,19.13,9.27z M14.37,10.26c-5.16,2.32-8.89,4-11.16,5.01l-0.56,0.25  l-0.05-4.47h3.65c0.28,0,0.51-0.23,0.51-0.51V9.45c0-0.28-0.23-0.51-0.51-0.51H2.56L2.5,4.44l12.7,5.44L14.37,10.26z"
+                  />
+                </svg>
+              </div>
+              <div class="navstext"><p>Sent</p></div>
+            </div>
+            <div class="navscount"><p></p></div
+          ></a>
+          <a href="" class="navs">
+            <div class="iconandtextwrap">
+              <div class="navsicon">
+                <svg
+                  viewbox="0 0 22 22"
+                  x="0px"
+                  y="0px"
+                  width="18px"
+                  height="18px"
+                >
+                  <path
+                    xmlns="http://www.w3.org/2000/svg"
+                    d="M16.39,3.58c-0.67-0.73-1.46-1.6-2.39-2.65c-0.2-0.23-0.45-0.34-0.74-0.34H3.34c-0.71,0-0.86,0.53-0.86,0.97v17.32  c0,0.53,0.16,0.71,0.21,0.76c0.14,0.15,0.37,0.23,0.67,0.23h12.46c0.32,0,0.55-0.08,0.69-0.25c0.12-0.15,0.19-0.4,0.19-0.75  L16.72,4.4C16.7,4.1,16.59,3.82,16.39,3.58z M14.44,17.45H4.75V3.02l6.3,0l0.05,2.12c0,0.45,0.11,0.79,0.33,1.05  c0.25,0.29,0.62,0.43,1.1,0.43l1.91,0.01L14.44,17.45z"
+                  />
+                </svg>
+              </div>
+              <div class="navstext"><p>Draft</p></div>
+            </div>
+            <div class="navscount"><p>11</p></div></a
+          >
+          <a href="" class="navs">
+            <div class="iconandtextwrap">
+              <div class="navsicon">
+                <svg
+                  viewbox="0 0 22 22"
+                  x="0px"
+                  y="0px"
+                  width="18px"
+                  height="18px"
+                >
+                  <path
+                    xmlns="http://www.w3.org/2000/svg"
+                    d="M10.05,14.77c-0.32,0-0.64-0.12-0.92-0.35L2.15,8.68C1.66,8.28,1.52,7.45,1.84,6.83c0.32-0.62,0.98-0.79,1.48-0.38   l6.73,5.54l6.62-5.44c0.49-0.41,1.15-0.23,1.48,0.38c0.32,0.62,0.19,1.45-0.31,1.85l-6.86,5.65   C10.69,14.65,10.37,14.77,10.05,14.77z"
+                  />
+                </svg>
+              </div>
+              <div class="navstext"><p>More</p></div>
+            </div>
+            <div class="navscount"><p></p></div
+          ></a>
+        </div>
+        <a href="" class="labels">
+          <div><p class="">Labels</p></div>
+          <div class="addlabels"><p>+</p></div>
+        </a>
+      </nav>
+      <div class="emails">
+        <div class="emailheader">
+          <div class="emailheaderleft">
+            <div class="checkbox">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="dropdown">
+              <svg
+                viewbox="0 0 20 20"
+                x="0px"
+                y="0px"
+                width="20px"
+                height="20px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M5.19,9.42l4.07,3.33c0.11,0.09,0.29,0.09,0.4,0l4.1-3.35c0.18-0.15,0.05-0.4-0.2-0.4L5.39,9.02  C5.13,9.02,5.01,9.27,5.19,9.42z"
+                />
+              </svg>
+            </div>
+            <div class="refresh">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.37,10.25c-0.14,5.03-4.34,9.12-9.37,9.12c-5.17,0-9.37-4.2-9.37-9.37c0-5.17,4.2-9.37,9.37-9.37
+              c2.2,0,4.29,0.77,5.94,2.13l2.29-1.83c0.17-0.15,0.42-0.02,0.38,0.2l-0.79,4.9c-0.02,0.13-0.15,0.23-0.28,0.22L12.62,5.9
+              c-0.22-0.01-0.29-0.28-0.11-0.42l2.23-1.77c-1.35-1.01-3-1.58-4.74-1.58c-4.34,0-7.87,3.53-7.87,7.87c0,4.34,3.53,7.87,7.87,7.87
+              c4.23,0,7.76-3.44,7.87-7.66c0.01-0.41,0.34-0.77,0.77-0.73C19.05,9.49,19.38,9.84,19.37,10.25z"
+                />
+              </svg>
+            </div>
+            <div class="option">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <g>
+                  <circle cx="10" cy="2.06" r="1.64" />
+                </g>
+                <g>
+                  <circle cx="10" cy="9.73" r="1.64" />
+                </g>
+                <g>
+                  <circle cx="10" cy="17.4" r="1.64" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="emailheaderright">
+            <div class="emailpages">
+              <p>1-10 of 93484</p>
+            </div>
+            <div class="goleft">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M6.81,10.5c0-0.23,0.09-0.44,0.25-0.6l4.67-4.67c0.33-0.33,0.87-0.33,1.2,0c0.33,0.33,0.33,0.87,0,1.2L8.86,10.5l4.07,4.07
+              c0.33,0.33,0.33,0.87,0,1.2c-0.33,0.33-0.87,0.33-1.2,0L7.06,11.1C6.9,10.94,6.81,10.73,6.81,10.5z"
+                />
+              </svg>
+            </div>
+            <div class="goright">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M13.19,10.5c0,0.23-0.09,0.44-0.25,0.6l-4.67,4.67c-0.33,0.33-0.87,0.33-1.2,0c-0.33-0.33-0.33-0.87,0-1.2l4.07-4.07 L7.06,6.43c-0.33-0.33-0.33-0.87,0-1.2s0.87-0.33,1.2,0l4.67,4.67C13.1,10.06,13.19,10.27,13.19,10.5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="eacheamil">
+          <div class="email1">
+            <div class="leftoption">
+              <svg
+                x="0px"
+                y="0px"
+                width="8.31px"
+                height="16.79px"
+                viewBox="0 0 8.31 19.79"
+              >
+                <g>
+                  <g>
+                    <circle cx="2.12" cy="2.23" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="9.89" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="17.56" r="1.64" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="6.19" cy="2.26" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="9.93" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="17.6" r="1.64" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                />
+              </svg>
+            </div>
+            <div class="sender"><p>Upwork Notification</p></div>
+            <div class="content">
+              <p class="text">
+                <span>
+                  An unknown device or browser has been used to access your
+                  account
+                </span>
+                - Hi Ganiyu, was this you? We noticed a recent login to your
+                Upwork account wedesign11 from an unfamiliar location or device.
+                Timestamp June 07, 2023 6:33 AM If this was you no further
+                action is required. If you do not recognize this activity, reset
+                your password immediately.
+              </p>
+            </div>
+            <div class="dateoricon">
+              <div class="emaildate"><p>3:30pm</p></div>
+              <div class="emailhoveroptions">
+                <div class="icononhover">
+                  <img src="Images/archive_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/delete_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/drafts_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/schedule_baseline_nv700_20dp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="eacheamil">
+          <div class="email1">
+            <div class="leftoption">
+              <svg
+                x="0px"
+                y="0px"
+                width="8.31px"
+                height="16.79px"
+                viewBox="0 0 8.31 19.79"
+              >
+                <g>
+                  <g>
+                    <circle cx="2.12" cy="2.23" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="9.89" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="17.56" r="1.64" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="6.19" cy="2.26" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="9.93" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="17.6" r="1.64" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                />
+              </svg>
+            </div>
+            <div class="sender"><p>GitHub</p></div>
+            <div class="content">
+              <p class="text">
+                <span> [GitHub] Please verify your device </span> - Hey
+                We-techdesign4u! A sign in attempt requires further verification
+                because we did not recognize your device. To complete the sign
+                in, enter the verification code on the unrecognized device.
+              </p>
+            </div>
+            <div class="dateoricon">
+              <div class="emaildate"><p>4:30pm</p></div>
+              <div class="emailhoveroptions">
+                <div class="icononhover">
+                  <img src="Images/archive_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/delete_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/drafts_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/schedule_baseline_nv700_20dp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="eacheamil">
+          <div class="email1">
+            <div class="leftoption">
+              <svg
+                x="0px"
+                y="0px"
+                width="8.31px"
+                height="16.79px"
+                viewBox="0 0 8.31 19.79"
+              >
+                <g>
+                  <g>
+                    <circle cx="2.12" cy="2.23" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="9.89" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="17.56" r="1.64" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="6.19" cy="2.26" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="9.93" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="17.6" r="1.64" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                />
+              </svg>
+            </div>
+            <div class="sender"><p>Namecheap</p></div>
+            <div class="content">
+              <p class="text">
+                <span> Get a .FAMILY domain for only $9.98/yr </span> - Time's
+                nearly up! But if you're quick, you can still save up to 97%
+                Head over to our Bloggers' Sale and find incredible savings on
+                essentials great for all website owners — not just bloggers!
+                Make huge savings on domains, hosting, business tools, and more!
+              </p>
+            </div>
+            <div class="dateoricon">
+              <div class="emaildate"><p>7:30pm</p></div>
+              <div class="emailhoveroptions">
+                <div class="icononhover">
+                  <img src="Images/archive_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/delete_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/drafts_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/schedule_baseline_nv700_20dp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="eacheamil">
+          <div class="email1">
+            <div class="leftoption">
+              <svg
+                x="0px"
+                y="0px"
+                width="8.31px"
+                height="16.79px"
+                viewBox="0 0 8.31 19.79"
+              >
+                <g>
+                  <g>
+                    <circle cx="2.12" cy="2.23" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="9.89" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="17.56" r="1.64" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="6.19" cy="2.26" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="9.93" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="17.6" r="1.64" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                />
+              </svg>
+            </div>
+            <div class="sender"><p>Fiverr</p></div>
+            <div class="content">
+              <p class="text">
+                <span> Reminder: Review the order requirements now </span> -
+                Reminder: Review the order requirements now. Hi, This is a
+                reminder regarding order #FO667784637 (I will create an
+                outstanding landing page) The order is due on 10 Jun 2023 and
+                you still haven't reviewed the requirements.
+              </p>
+            </div>
+            <div class="dateoricon">
+              <div class="emaildate"><p>8:30pm</p></div>
+              <div class="emailhoveroptions">
+                <div class="icononhover">
+                  <img src="Images/archive_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/delete_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/drafts_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/schedule_baseline_nv700_20dp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="eacheamil">
+          <div class="email1">
+            <div class="leftoption">
+              <svg
+                x="0px"
+                y="0px"
+                width="8.31px"
+                height="16.79px"
+                viewBox="0 0 8.31 19.79"
+              >
+                <g>
+                  <g>
+                    <circle cx="2.12" cy="2.23" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="9.89" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="17.56" r="1.64" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="6.19" cy="2.26" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="9.93" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="17.6" r="1.64" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                />
+              </svg>
+            </div>
+            <div class="sender"><p>Upwork Events</p></div>
+            <div class="content">
+              <p class="text">
+                <span>
+                  Ganiyu, here’s your personal invite to Spotlight: How Upwork
+                  Invests In Your Success
+                </span>
+                - Hi Ganiyu, What makes Upwork the go-to for independent
+                professionals around the world? Maybe it’s the constant effort
+                we put into launching new features and programs to help you fire
+                the old ways of working, and grow and succeed on your own terms.
+                Some of the ways we’re committed to your ongoing success on
+                Upwork include access to larger jobs using Talent Badges,
+                setting up paid consultations to help you build your reputation
+                as an expert, new contract-to-hire opportunities, and launching
+                a dedicated Academy.
+              </p>
+            </div>
+            <div class="dateoricon">
+              <div class="emaildate"><p>Today</p></div>
+              <div class="emailhoveroptions">
+                <div class="icononhover">
+                  <img src="Images/archive_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/delete_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/drafts_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/schedule_baseline_nv700_20dp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="eacheamil">
+          <div class="email1">
+            <div class="leftoption">
+              <svg
+                x="0px"
+                y="0px"
+                width="8.31px"
+                height="16.79px"
+                viewBox="0 0 8.31 19.79"
+              >
+                <g>
+                  <g>
+                    <circle cx="2.12" cy="2.23" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="9.89" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="17.56" r="1.64" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="6.19" cy="2.26" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="9.93" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="17.6" r="1.64" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                />
+              </svg>
+            </div>
+            <div class="sender"><p>Edward via Upwork</p></div>
+            <div class="content">
+              <p class="text">
+                <span>
+                  You have unread messages about the job Fontend services
+                </span>
+                - Reply to your new message. You have unread messages for
+                frontend services
+              </p>
+            </div>
+            <div class="dateoricon">
+              <div class="emaildate"><p>June9</p></div>
+              <div class="emailhoveroptions">
+                <div class="icononhover">
+                  <img src="Images/archive_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/delete_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/drafts_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/schedule_baseline_nv700_20dp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="eacheamil">
+          <div class="email1">
+            <div class="leftoption">
+              <svg
+                x="0px"
+                y="0px"
+                width="8.31px"
+                height="16.79px"
+                viewBox="0 0 8.31 19.79"
+              >
+                <g>
+                  <g>
+                    <circle cx="2.12" cy="2.23" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="9.89" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="17.56" r="1.64" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="6.19" cy="2.26" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="9.93" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="17.6" r="1.64" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                />
+              </svg>
+            </div>
+            <div class="sender"><p>Hostinger Tutorials</p></div>
+            <div class="content">
+              <p class="text">
+                <span> Your online journey must start somewhere </span> - Best
+                Free Hosting Suggestions Starting your own business can be
+                tough. There are a lot of expenses, especially at the beginning
+                – even with setting up your website. Luckily, you can start with
+                free hosting services. Cut costs and scale from there once your
+                website starts generating more traffic and revenue.
+              </p>
+            </div>
+            <div class="dateoricon">
+              <div class="emaildate"><p>June9</p></div>
+              <div class="emailhoveroptions">
+                <div class="icononhover">
+                  <img src="Images/archive_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/delete_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/drafts_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/schedule_baseline_nv700_20dp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="eacheamil">
+          <div class="email1">
+            <div class="leftoption">
+              <svg
+                x="0px"
+                y="0px"
+                width="8.31px"
+                height="16.79px"
+                viewBox="0 0 8.31 19.79"
+              >
+                <g>
+                  <g>
+                    <circle cx="2.12" cy="2.23" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="9.89" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="17.56" r="1.64" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="6.19" cy="2.26" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="9.93" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="17.6" r="1.64" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                />
+              </svg>
+            </div>
+            <div class="sender"><p>Fiverr</p></div>
+            <div class="content">
+              <p class="text">
+                <span> Great news: You've received an order from jack </span> -
+                You just received an order from jack Please review the
+                requirements below: Hi, You've just received an order from
+                jackcarlstanley! Feels good, right? Order #FO874683948 is due
+                Jun 10, 2023.
+              </p>
+            </div>
+            <div class="dateoricon">
+              <div class="emaildate"><p>June9</p></div>
+              <div class="emailhoveroptions">
+                <div class="icononhover">
+                  <img src="Images/archive_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/delete_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/drafts_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/schedule_baseline_nv700_20dp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="eacheamil">
+          <div class="email1">
+            <div class="leftoption">
+              <svg
+                x="0px"
+                y="0px"
+                width="8.31px"
+                height="16.79px"
+                viewBox="0 0 8.31 19.79"
+              >
+                <g>
+                  <g>
+                    <circle cx="2.12" cy="2.23" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="9.89" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="17.56" r="1.64" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="6.19" cy="2.26" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="9.93" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="17.6" r="1.64" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                />
+              </svg>
+            </div>
+            <div class="sender"><p>Fiverr</p></div>
+            <div class="content">
+              <p class="text">
+                <span> You've just been tipped! </span> - You've just been
+                tipped! Gratuity Guess what, You've just been tipped! You
+                received a tip from dave for order #FO7788765544 "thanks ....
+                lets keep going"
+              </p>
+            </div>
+            <div class="dateoricon">
+              <div class="emaildate"><p>June10</p></div>
+              <div class="emailhoveroptions">
+                <div class="icononhover">
+                  <img src="Images/archive_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/delete_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/drafts_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/schedule_baseline_nv700_20dp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="eacheamil">
+          <div class="email1">
+            <div class="leftoption">
+              <svg
+                x="0px"
+                y="0px"
+                width="8.31px"
+                height="16.79px"
+                viewBox="0 0 8.31 19.79"
+              >
+                <g>
+                  <g>
+                    <circle cx="2.12" cy="2.23" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="9.89" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="2.12" cy="17.56" r="1.64" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="6.19" cy="2.26" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="9.93" r="1.64" />
+                  </g>
+                  <g>
+                    <circle cx="6.19" cy="17.6" r="1.64" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  xmlns="http://www.w3.org/2000/svg"
+                  d="M17.29,2.86v14.58H2.71V2.86H17.29 M18.82,0.86H1.18c-0.26,0-0.47,0.21-0.47,0.47v17.64c0,0.26,0.21,0.47,0.47,0.47h17.64  c0.26,0,0.47-0.21,0.47-0.47V1.33C19.29,1.07,19.08,0.86,18.82,0.86L18.82,0.86z"
+                />
+              </svg>
+            </div>
+            <div class="checkandstarred">
+              <svg
+                viewbox="0 0 22 22"
+                x="0px"
+                y="0px"
+                width="18px"
+                height="18px"
+              >
+                <path
+                  d="M19.91,7.6c-0.15-0.42-0.52-0.7-0.97-0.75L13.76,6.1l-0.28-0.04L13.35,5.8l-2.4-4.85c-0.05-0.11-0.12-0.21-0.21-0.29  c-0.22-0.21-0.5-0.33-0.79-0.33c-0.39,0-0.8,0.27-0.99,0.64L6.59,5.79L6.47,6.05L6.19,6.09l-0.64,0.1L1.03,6.84  C0.99,6.85,0.95,6.86,0.92,6.86c-0.39,0.1-0.68,0.35-0.82,0.7c-0.16,0.41-0.07,0.89,0.23,1.18c1.14,1.24,1.38,1.47,1.43,1.51  c0.38,0.39,0.84,0.85,1.42,1.4l0.89,0.88l0.2,0.2l-0.05,0.28l-0.88,5.22c-0.05,0.26-0.03,0.5,0.06,0.74  c0.11,0.27,0.36,0.51,0.63,0.61c0.11,0.04,0.23,0.06,0.36,0.06c0.18,0,0.36-0.04,0.51-0.12L9.72,17l0.25-0.13L10.22,17l4.68,2.46  c0.26,0.14,0.5,0.21,0.72,0.21c0.25,0,0.49-0.1,0.69-0.28c0.2-0.19,0.33-0.5,0.33-0.8c0-0.06,0-0.12-0.01-0.18l-0.93-5.39  l-0.05-0.28l0.21-0.2l2.69-2.61c0.05-0.04,0.3-0.28,1.1-1.12c0.02-0.02,0.05-0.05,0.07-0.08C19.97,8.37,20.05,7.96,19.91,7.6z   M13.83,11.62c-0.25,0.3-0.36,0.69-0.3,1.1l0.51,2.94l0.19,1.08l-0.97-0.51l-2.63-1.38c-0.21-0.12-0.43-0.18-0.65-0.18  c-0.24,0-0.46,0.06-0.68,0.19l-2.62,1.37L5.7,16.75l0.18-1.08l0.51-3c0.06-0.39-0.04-0.76-0.31-1.08c-0.02-0.02-0.05-0.05-0.07-0.08  l-1.39-1.36C4.35,9.89,4.09,9.65,3.86,9.42L3.08,8.65l1.08-0.16l1.69-0.24c0.66-0.1,1.06-0.16,1.2-0.18  c0.48-0.05,0.87-0.33,1.13-0.8l1.29-2.63l0.49-0.98l0.49,0.98l1.28,2.58c0.21,0.47,0.62,0.8,1.07,0.84l2.95,0.43l1.09,0.16  l-0.79,0.77l-1.73,1.68C14.06,11.37,13.91,11.52,13.83,11.62z"
+                />
+              </svg>
+            </div>
+            <div class="sender"><p>Quickteller</p></div>
+            <div class="content">
+              <p class="text">
+                <span> Important Update for Our Valued Customers </span> -
+                Important Update: Temporary Adjustment to Our Customer Support
+                Services Dear Valued Customer, This is to inform you about a
+                temporary adjustment to our customer support services. Starting
+                from the 12th of June, 2023, we are suspending our night call
+                center operations. Full operations will resume on the 3rd of
+                July, 2023.
+              </p>
+            </div>
+            <div class="dateoricon">
+              <div class="emaildate"><p>June12</p></div>
+              <div class="emailhoveroptions">
+                <div class="icononhover">
+                  <img src="Images/archive_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/delete_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/drafts_baseline_nv700_20dp.png" alt="" />
+                </div>
+                <div class="icononhover">
+                  <img src="Images/schedule_baseline_nv700_20dp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="footer">
+          <div class="footerleft">
+            <div class="fullstorage"><div class="storageused"></div></div>
+            <div class="storageusedinfigure"><p>1.07 GB of 15 GB used</p></div>
+          </div>
+          <div class="footermid"><p>Terms · Privacy · Program Policies</p></div>
+          <div class="footerright">
+            <p>
+              Last account activity: 20 hours ago <br />
+              Details
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rightcontainer">
+        <div class="RCicons">
+          <img src="Images/calendar_2020q4_2x.png" alt="" />
+        </div>
+        <div class="RCicons">
+          <img src="Images/keep_2020q4v3_2x.png" alt="" />
+        </div>
+        <div class="RCicons"><img src="Images/tasks_2021_2x.png" alt="" /></div>
+        <div class="RCicons">
+          <img src="Images/contacts_2022_2x.png" alt="" />
+        </div>
+        <div></div>
+      </div>
+    </main>
+  </body>
+</html>
